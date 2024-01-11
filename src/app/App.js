@@ -20,6 +20,7 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
@@ -33,6 +34,9 @@ export default function App() {
         />
       </div>
       <ScrollToTop>
+          <button onClick={() => handleLanguageChange(language === 'en' ? 'cs' : 'en')}>
+              Switch Language
+          </button>
         <Headermain />
         <AppRoutes />
       </ScrollToTop>

@@ -156,6 +156,36 @@ const dataportfolio = [{
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307432410_5529823567110792_3551469890393676820_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a73e89&_nc_ohc=a9e_VLdw5swAX-kIVMm&_nc_ht=scontent-prg1-1.xx&oh=00_AfD35q7bA18ofw_7ooOUR9dlIh2FAU0niBRMRILPHul4hA&oe=65A4B487",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307432928_5529829720443510_7532898140642909119_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a73e89&_nc_ohc=HuH5pECYkAcAX-O5X6F&_nc_ht=scontent-prg1-1.xx&oh=00_AfCnInhqGMeP4gqygCLtpY3rE0Z57zzn3nZF7q2aHJKj5g&oe=65A54278",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307359490_5529834353776380_2683208148508457220_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_ohc=2Mq9v_gjcBoAX97QOEh&_nc_ht=scontent-prg1-1.xx&oh=00_AfBNOhQRlRtMaIK3HuZ2i8waEP5eftZXU0eViKV87uRy5w&oe=65A41E31",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307297781_5529839827109166_9209617357066715939_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a73e89&_nc_ohc=MdNNTxzAnFsAX_QdCBE&_nc_ht=scontent-prg1-1.xx&oh=00_AfBewy2sV6yEvia-l5wudK8SI9xKyExmxYPgpVq1_nNNqQ&oe=65A3F8FD",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307845271_5529818230444659_1963944886974159520_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a73e89&_nc_ohc=0PKN2nImldEAX_gIBd3&_nc_ht=scontent-prg1-1.xx&oh=00_AfAqdL_wo-BZ1P_ilGRIXB1kdndfGulddHBsJUL_WYEqNQ&oe=65A3EDFF",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307485954_5529830273776788_6774156990067087243_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a73e89&_nc_ohc=S0w-A0kBkTMAX98aca8&_nc_ht=scontent-prg1-1.xx&oh=00_AfBVqkGJTp-6QRRNprCOFMlI2Y8hEWqpBX5K8HhYWHXMIA&oe=65A51B4D",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
 ];
 
 const contactConfig = {
