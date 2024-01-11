@@ -7,68 +7,76 @@ const meta = {
 const introdata = {
     title: "Šimon Čada",
     animated: {
-        first: "Party DJ",
+        first: "DJ",
         second: "Zvukař",
         third: "Produkce",
+        fourth: "Moderátor"
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
     your_img_url: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182023918_5474967112578669_2144950163301087455_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0bb214&_nc_ohc=fKyhRr8YZNIAX8HhpH2&_nc_ht=scontent-prg1-1.xx&oh=00_AfBogapSVe1WMPKxjbus3mJJ5PnDvPSH4ofX6YpRFHuZhw&oe=65C5DB59",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "Něco málo o mně",
+    aboutme: "Jsem studentem se zaměření It, ale vždy mě srdce táhlo k hudbě. Proto jsem se rozhodl ve svém volném čase pracovat se zvukem. Jak zvučit hudební tak kulturní akce, Dj hudebních akcí a kulturních, ale i produkce jako taková samotná.",
 };
 const worktimeline = [{
         jobtitle: "Dazed and Confused",
         where: "Blues-Rock",
-        link: "https://www.youtube.com/watch?v=u4J0USObOVk&ab_channel=Kostkaradio",
+        link: "https://youtu.be/u4J0USObOVk",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        link: "",
+        jobtitle: "Horizont",
+        where: "Rock",
+        link: "https://youtu.be/VIfhqaimYns"
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Šamat",
+        where: "Rock",
+        link: "https://youtu.be/rsZ5Ry6MGuA",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Zvučení",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "Moderování",
+        value: 75,
     },
     {
-        name: "Javascript",
-        value: 80,
+        name: "Dj",
+        value:90,
     },
     {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
+        name: "Produkce",
         value: 85,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Zvučení kulturních akcí",
+        description: "Mám vlastní PA sestavu kterou vozím všude a narozdíl od ostatních zvukařů zvučím akci ve společenském oblečení.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Zvučení hudebních akcí",
+        description: "Mám vlastní PA sestavu kterou vozím všude a jsem ochotný vzít i světla.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Zvučení sportovních akcí",
+        description: "Mám vlastní PA sestavu kterou vozím všude a jsem schopný přes svoje kontakty zařídit i časomíru a ostatní potřeby na sportovní akce",
+    },
+    {
+        title: "Produkce PA a Světelných sestav",
+        description: "Jsem ochotný vám půjčit na víkend nebo na určitý den moji sestavu co budete potřebovat.",
+    },
+    {
+        title: "Kontakty",
+        description: "Mám spoustu kontaktů které by vám mohli pomoct a nebo akci podpořit.",
+    },
+    {
+        title: "Podpora",
+        description: "Jsme tu, abychom vám pomohli na vaší cestě.",
     },
 ];
 
@@ -138,7 +146,7 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "cadaprodukce@info.cz",
     YOUR_FONE: "+420 777 222 771",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "Už jste připraveni na perfektní ozvučení? Ozvěte se nám! Velké věci čekají za rohem.",
 
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
@@ -148,8 +156,8 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/S1moonC",
     facebook: "https://www.facebook.com/profile.php?id=100008208610713",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+    instagram: "https://www.instagram.com/_simon_cada_/",
 };
 export {
     meta,
