@@ -34,6 +34,21 @@ const worktimeline = [{
         where: "Rock",
         link: "https://youtu.be/rsZ5Ry6MGuA",
     },
+    {
+        jobtitle: "Donor",
+        where: "HeavyMetal",
+        link: "https://youtu.be/92QKW3V7eTA",
+    },
+    {
+        jobtitle: "Docuku",
+        where: "acoustic-world music",
+        link: "https://youtu.be/83InxJB4EUk",
+    },
+    {
+        jobtitle: "Veselá bída",
+        where: "Folk",
+        link: "https://youtu.be/ndljl-XFuxE",
+    },
 ];
 
 const skills = [{
