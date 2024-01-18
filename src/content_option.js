@@ -96,10 +96,10 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182571818_5474967445911969_7960391918174028724_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0bb214&_nc_ohc=dYWw27WUE6gAX-OH-vh&_nc_ht=scontent-prg1-1.xx&oh=00_AfBx-vesAPRBjAeIaRZC6u2Z3RkILAuONWjyXhizQr5-Yw&oe=65C5F7E2",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182571818_5474967445911969_7960391918174028724_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0bb214&_nc_ohc=dYWw27WUE6gAX-OH-vh&_nc_ht=scontent-prg1-1.xx&oh=00_AfBx-vesAPRBjAeIaRZC6u2Z3RkILAuONWjyXhizQr5-Yw&oe=65C5F7E2",
+    description: "The wisdom of life consists in the elimination of non-essentials.",
+    link: "#",
+},
     {
         img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/181275032_5474967232578657_5045811638055584851_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0bb214&_nc_ohc=n6G2CfLWnycAX9zW2Kn&_nc_ht=scontent-prg1-1.xx&oh=00_AfATvdB_eXzpgocg0EdyGzZqrnEJVaygZrySnGXUNXUGRw&oe=65C5FD58",
         description: "The wisdom of life consists in the elimination of non-essentials.",
@@ -152,37 +152,32 @@ const dataportfolio = [{
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/180881022_5474966032578777_5839376829780661615_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0bb214&_nc_ohc=_lbhh1AtBCYAX9N5yoF&_nc_ht=scontent-prg1-1.xx&oh=00_AfCHkNTfVsvjZDjO3UYj-FrBkQzVh-kAQ5SEzFo4urNUdw&oe=65C5F4B3",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307860032_5529816150444867_9163222766166334280_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a73e89&_nc_ohc=39TurGmdDocAX8_Ix5O&_nc_ht=scontent-prg1-1.xx&oh=00_AfBmhCie4n61bkzKEo2LdmtnV_mykP46GB0KQ7aRuhMwMg&oe=65ADAA99",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307432410_5529823567110792_3551469890393676820_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a73e89&_nc_ohc=a9e_VLdw5swAX-kIVMm&_nc_ht=scontent-prg1-1.xx&oh=00_AfD35q7bA18ofw_7ooOUR9dlIh2FAU0niBRMRILPHul4hA&oe=65A4B487",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307836052_5529816033778212_7747374749939886429_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a73e89&_nc_ohc=wpCyN8njaEkAX_lEOMX&_nc_ht=scontent-prg1-1.xx&oh=00_AfAN3QtRobxGP1op8Kpte3Rsim7Duiq8u9djbixKI8_eNA&oe=65AE86C7",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307432928_5529829720443510_7532898140642909119_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a73e89&_nc_ohc=HuH5pECYkAcAX-O5X6F&_nc_ht=scontent-prg1-1.xx&oh=00_AfCnInhqGMeP4gqygCLtpY3rE0Z57zzn3nZF7q2aHJKj5g&oe=65A54278",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307745425_5529818170444665_6943304140139996818_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a73e89&_nc_ohc=f9XsemZOJToAX9b0DuD&_nc_ht=scontent-prg1-1.xx&oh=00_AfBVWPQ33hn6IVLZt6JzeL2r5GmWGr2O_UiBznZ4WoyQTA&oe=65ADF261",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307359490_5529834353776380_2683208148508457220_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_ohc=2Mq9v_gjcBoAX97QOEh&_nc_ht=scontent-prg1-1.xx&oh=00_AfBNOhQRlRtMaIK3HuZ2i8waEP5eftZXU0eViKV87uRy5w&oe=65A41E31",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307572095_5529818743777941_6102247411128979779_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a73e89&_nc_ohc=_KHxWSFOQQoAX9gDzDH&_nc_ht=scontent-prg1-1.xx&oh=00_AfAh_ok5KND2iMdSsIV3wzvbfWwGa-4zXs8p1o-z_RnxGQ&oe=65AE1E0E",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307297781_5529839827109166_9209617357066715939_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a73e89&_nc_ohc=MdNNTxzAnFsAX_QdCBE&_nc_ht=scontent-prg1-1.xx&oh=00_AfBewy2sV6yEvia-l5wudK8SI9xKyExmxYPgpVq1_nNNqQ&oe=65A3F8FD",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307558854_5529821553777660_5798064625860160863_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_ohc=RYpjJQkEfHkAX89b9qf&_nc_ht=scontent-prg1-1.xx&oh=00_AfDmbLXApkueEdjMFQ8euh2ooDfNsG-B28HPp-U2M45hlg&oe=65ADBEE5",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
     {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307845271_5529818230444659_1963944886974159520_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a73e89&_nc_ohc=0PKN2nImldEAX_gIBd3&_nc_ht=scontent-prg1-1.xx&oh=00_AfAqdL_wo-BZ1P_ilGRIXB1kdndfGulddHBsJUL_WYEqNQ&oe=65A3EDFF",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307485954_5529830273776788_6774156990067087243_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a73e89&_nc_ohc=S0w-A0kBkTMAX98aca8&_nc_ht=scontent-prg1-1.xx&oh=00_AfBVqkGJTp-6QRRNprCOFMlI2Y8hEWqpBX5K8HhYWHXMIA&oe=65A51B4D",
+        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307997359_5529822483777567_7710355051310295656_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a73e89&_nc_ohc=ytRlJzPlJf4AX8nNGVq&_nc_ht=scontent-prg1-1.xx&oh=00_AfDIGqKNBzsXnhKMyuSEnDiIPw1Y22-f2BB5MJNd-_V6FA&oe=65ACF87B",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
