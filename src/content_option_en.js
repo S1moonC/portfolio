@@ -96,92 +96,26 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-   img: "/images/1.jpg",
-        description: "Event photography",
-        link: "#",
-},
-    {
-        img: "/images/2.jpg",
-        description: "Event photography",
-        link: "#",
-    },
-    {
-        img: "/images/3.jpg",
-        description: "Event photography",
-        link: "#",
-    },
-    {
-        img: "/images/4.jpg",
-        description: "Event photography",
-        link: "#",
-    },
-    {
-        img: "/images/5.jpg",
-        description: "Event photography",
-        link: "#",
-    },
-    {
-        img: "/images/6.jpg",
-        description: "Event photography",
-        link: "#",
-    },
 
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182165255_5474966419245405_258788705371805082_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0bb214&_nc_ohc=QqEhrPGqj58AX_G4vuR&_nc_ht=scontent-prg1-1.xx&oh=00_AfC7WMglcXUNEmNiAMjm69tugasGUiocOpYxbZVS5BLBEw&oe=65C60079",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182248624_5474964509245596_4107917645519598526_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0bb214&_nc_ohc=hIKDwqvMfowAX9a6PcL&_nc_oc=AQm-Y58rs6wbQvzGrVExlJido1lcf1xsOwa85h0zjbLF7bpCkrMsIz6WQqkD3vMBctvD8XEXtScchTUqwJG7Elqd&_nc_ht=scontent-prg1-1.xx&oh=00_AfC3ITWpFVbs-j14i9WZyhAPDngBZeajHIaI6Qs1NiBdpw&oe=65C5D4BE",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/182408950_5474963975912316_7429122347740468602_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0bb214&_nc_ohc=rvHmObH6JskAX-uCDdL&_nc_ht=scontent-prg1-1.xx&oh=00_AfBFX4lOo1B_O1p7HmptvCCxv2KYmXhZulYioJ2ZoTNmDg&oe=65C5F312",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/180858541_5474961295912584_2293443497286010662_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0bb214&_nc_ohc=X1CMibM-p9oAX_QwL7_&_nc_ht=scontent-prg1-1.xx&oh=00_AfA5_3DKbqKsweeeCB87Xax-rDWNX0PqxlKl6pL0_Vo7Dw&oe=65C5DAFF",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t1.6435-9/180496621_5474961809245866_129129595298516311_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0bb214&_nc_ohc=mj0CzPkdfgwAX_VTt0k&_nc_ht=scontent-prg1-1.xx&oh=00_AfAhdFnEgYlnj1Gtt5esz9fsdDamtyJuRXK_Ppw3Qj5JKw&oe=65C5D543",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307860032_5529816150444867_9163222766166334280_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a73e89&_nc_ohc=39TurGmdDocAX8_Ix5O&_nc_ht=scontent-prg1-1.xx&oh=00_AfBmhCie4n61bkzKEo2LdmtnV_mykP46GB0KQ7aRuhMwMg&oe=65ADAA99",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307836052_5529816033778212_7747374749939886429_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a73e89&_nc_ohc=wpCyN8njaEkAX_lEOMX&_nc_ht=scontent-prg1-1.xx&oh=00_AfAN3QtRobxGP1op8Kpte3Rsim7Duiq8u9djbixKI8_eNA&oe=65AE86C7",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307745425_5529818170444665_6943304140139996818_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a73e89&_nc_ohc=f9XsemZOJToAX9b0DuD&_nc_ht=scontent-prg1-1.xx&oh=00_AfBVWPQ33hn6IVLZt6JzeL2r5GmWGr2O_UiBznZ4WoyQTA&oe=65ADF261",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307572095_5529818743777941_6102247411128979779_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a73e89&_nc_ohc=_KHxWSFOQQoAX9gDzDH&_nc_ht=scontent-prg1-1.xx&oh=00_AfAh_ok5KND2iMdSsIV3wzvbfWwGa-4zXs8p1o-z_RnxGQ&oe=65AE1E0E",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307558854_5529821553777660_5798064625860160863_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a73e89&_nc_ohc=RYpjJQkEfHkAX89b9qf&_nc_ht=scontent-prg1-1.xx&oh=00_AfDmbLXApkueEdjMFQ8euh2ooDfNsG-B28HPp-U2M45hlg&oe=65ADBEE5",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/307997359_5529822483777567_7710355051310295656_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a73e89&_nc_ohc=ytRlJzPlJf4AX8nNGVq&_nc_ht=scontent-prg1-1.xx&oh=00_AfDIGqKNBzsXnhKMyuSEnDiIPw1Y22-f2BB5MJNd-_V6FA&oe=65ACF87B",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const dataportfolio = [
+    { img: "/images/1.jpg", description: "Event photography", link: "#" },
+    { img: "/images/2.jpg", description: "Event photography", link: "#" },
+    { img: "/images/3.jpg", description: "Event photography", link: "#" },
+    { img: "/images/4.jpg", description: "Event photography", link: "#" },
+    { img: "/images/5.jpg", description: "Event photography", link: "#" },
+    { img: "/images/6.jpg", description: "Event photography", link: "#" },
+    { img: "/images/7.jpg", description: "Event photography", link: "#" },
+    { img: "/images/8.jpg", description: "Event photography", link: "#" },
+    { img: "/images/9.jpg", description: "Event photography", link: "#" },
+    { img: "/images/10.jpg", description: "Event photography", link: "#" },
+    { img: "/images/11.jpg", description: "Event photography", link: "#" },
+    { img: "/images/12.jpg", description: "Event photography", link: "#" },
+    { img: "/images/13.jpg", description: "Event photography", link: "#" },
+    { img: "/images/14.jpg", description: "Event photography", link: "#" },
+    { img: "/images/15.jpg", description: "Event photography", link: "#" },
+    { img: "/images/16.jpg", description: "Event photography", link: "#" },
+    { img: "/images/17.jpg", description: "Event photography", link: "#" },
+    { img: "/images/18.jpg", description: "Event photography", link: "#" },
 ];
 
 const contactConfig = {
