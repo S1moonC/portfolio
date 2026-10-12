@@ -12,7 +12,7 @@ const introdata = {
         third: "Production",
         fourth: "Moderator"
     },
-    your_img_url: "/images/hlavni.jpg",
+    your_img_url: "/images/main.jpg",
 };
 
 const dataabout = {
