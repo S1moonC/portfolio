@@ -31,9 +31,16 @@ export const About = () => {
             <Col lg="7" className="d-flex align-items-center">
               <div>
                
-<p className="about-description">
-    {data.dataabout.aboutme}
-</p>
+
+<div className="about-description">
+    {data.dataabout.aboutme
+        .trim()
+        .split(/\n\s*\n/)
+        .map((paragraph, index) => (
+            <p key={index}>{paragraph.trim()}</p>
+        ))}
+</div>
+
 
               </div>
             </Col>
