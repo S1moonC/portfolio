@@ -15,10 +15,16 @@ const introdata = {
     your_img_url: "/images/main.jpg",
 };
 
+
 const dataabout = {
     title: "A Little About Me",
-    aboutme: "I am a student specializing in IT, but my heart has always been drawn to music. That's why I decided to work with sound in my free time, covering both music and cultural events, DJing for music and cultural events, as well as production itself.",
+    aboutme: `Music and sound have been an essential part of my life since childhood. Over time, my passion for music has developed into practical experience in sound engineering, event hosting, and the production of various events.
+
+Since 2018, I have been actively involved in organizing and providing technical support for sporting, cultural, and social events. During this time, I have gained experience not only in sound engineering but also in communicating with performers and organizers, as well as coordinating events.
+
+Alongside sound engineering, I am also passionate about playing guitar, music production, and information technology. I enjoy combining technical knowledge with creativity and continuously looking for opportunities to develop my skills.`,
 };
+
 
 const worktimeline = [{
     jobtitle: "Dazed and Confused",
