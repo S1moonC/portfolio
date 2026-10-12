@@ -13,7 +13,7 @@ const introdata = {
         fourth: "Moderátor"
     },
 
-  your_img_url: "/images/hlavni.jpg",
+ your_img_url: "/images/main.jpg",
 };
 
 const dataabout = {
