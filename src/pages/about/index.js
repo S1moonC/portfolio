@@ -30,7 +30,11 @@ export const About = () => {
             </Col>
             <Col lg="7" className="d-flex align-items-center">
               <div>
-                <p>{data.dataabout.aboutme}</p>
+               
+<p className="about-description">
+    {data.dataabout.aboutme}
+</p>
+
               </div>
             </Col>
           </Row>
