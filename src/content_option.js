@@ -16,10 +16,16 @@ const introdata = {
  your_img_url: "/images/main.jpg",
 };
 
+
 const dataabout = {
     title: "Něco málo o mně",
-    aboutme: "Jsem studentem se zaměření It, ale vždy mě srdce táhlo k hudbě. Proto jsem se rozhodl ve svém volném čase pracovat se zvukem. Jak zvučit hudební tak kulturní akce, Dj hudebních akcí a kulturních, ale i produkce jako taková samotná.",
+    aboutme: `Hudba a zvuk jsou nedílnou součástí mého života už od dětství. Postupně se moje vášeň pro hudbu proměnila v praktické zkušenosti v oblasti zvukové techniky, moderování a produkce nejrůznějších akcí.
+
+Od roku 2018 se aktivně podílím na organizaci a technickém zajištění sportovních, kulturních a společenských událostí. Během této doby jsem získal zkušenosti nejen se samotným ozvučováním, ale také s komunikací s účinkujícími, organizátory a koordinací průběhu akcí.
+
+Vedle zvukové techniky se věnuji také hře na kytaru, hudební tvorbě a informačním technologiím. Rád propojuji technické znalosti s kreativitou a neustále hledám příležitosti, jak se dále rozvíjet.`,
 };
+
 const worktimeline = [{
         jobtitle: "Dazed and Confused",
         where: "Blues-Rock",
