@@ -98,3 +98,12 @@
         transform: translateZ(0);
     }
 }
+
+.about-description p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-description p:last-child {
+    margin-bottom: 0;
+}
