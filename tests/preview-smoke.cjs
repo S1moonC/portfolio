@@ -161,6 +161,45 @@ async function run() {
       }
     }
 
+
+    // Cinematic mobile variant must retain full-height photo, readable text and 3 links.
+    for (const viewport of [{ width: 402, height: 874 }, { width: 375, height: 812 }, { width: 320, height: 700 }]) {
+      await page.setViewportSize(viewport);
+      for (const lang of ["cs", "en"]) {
+        await goto(lang === "en" ? "/?lang=en" : "/");
+        await page.waitForTimeout(600);
+        const cinematic = page.locator(".cinematic-mobile-copy");
+        assert(await cinematic.isVisible(), "Cinematic mobile content must be visible");
+        assert.equal(await page.locator(".cinematic-name").innerText().then(x => x.replace(/\s+/g, "")), "ŠimonČada.");
+        const role = await page.locator(".cinematic-role").innerText();
+        assert(role.includes(lang === "en" ? "Sound engineer" : "Zvukař"), "Mobile role should be localized");
+        const hero = await page.locator("#home .intro_sec").boundingBox();
+        const image = await page.locator("#home .h_bg-image").boundingBox();
+        assert(hero && image && image.height > viewport.height * 0.65, "Photo should cover most of the screen");
+        assert(hero.height >= viewport.height - 90, "Cinematic hero should fill the mobile screen");
+        const linkRects = await page.locator("#home .intro_btn-action > a").evaluateAll(els => els.map(el => {
+          const r = el.getBoundingClientRect(); return { top:r.top, left:r.left, right:r.right, width:r.width };
+        }));
+        assert.equal(linkRects.length, 3);
+        assert(linkRects.every(r => Math.abs(r.top - linkRects[0].top) < 2), "All three CTAs must be in a row");
+        assert(linkRects.every(r => r.width > 50), "CTAs must remain usable");
+        assert(linkRects[0].right <= linkRects[1].left + 1 && linkRects[1].right <= linkRects[2].left + 1, "CTAs should not overlap");
+        const docWidth = await page.evaluate(() => document.documentElement.scrollWidth);
+        assert(docWidth <= viewport.width + 2, "No horizontal overflow for cinematic hero");
+        if (viewport.width === 402) {
+          await page.screenshot({
+            path: `preview-screenshots/cinematic-iphone16pro-${lang}.png`,
+            fullPage: true
+          });
+        }
+      }
+    }
+    // Keep the existing desktop homepage, including its animated title.
+    await page.setViewportSize({ width: 1440, height: 900 });
+    await goto("/");
+    assert(await page.locator(".desktop-intro-typewriter").isVisible(), "Desktop typewriter should remain visible");
+    assert(!(await page.locator(".cinematic-mobile-copy").isVisible()), "Mobile cinematic copy should be hidden on desktop");
+
     assert.deepEqual(errors, [], "Unexpected browser JavaScript errors");
     console.log("PASS: bilingual pages, navigation, interview, social links, mobile menu, mocked contact form.");
   } finally {
