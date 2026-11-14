@@ -84,3 +84,13 @@
         margin-right: 10px;
     }
 }
+
+@media(max-width:767.98px){
+ .stick_follow_icon{display:flex;flex-direction:column-reverse;align-items:center;justify-content:center;gap:8px;padding:22px 10px calc(28px + env(safe-area-inset-bottom,0px));margin:0;width:100%;height:auto}
+ .stick_follow_icon ul{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:14px;margin:0;padding:0}
+ .stick_follow_icon ul li{margin:0;display:block}
+ .stick_follow_icon ul a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px}
+ .stick_follow_icon svg{width:1.45em;height:1.45em}
+ .stick_follow_icon p{position:static;transform:none;width:auto;height:auto;top:auto;left:auto;margin:0;font-size:.84rem}
+ .stick_follow_icon p:after{display:none}
+}
