@@ -41,7 +41,8 @@ export default function App() {
                     outerScale={5}
                 />
             </div>
-            <DocumentLanguage />\n            <ScrollToTop>
+            <DocumentLanguage />
+            <ScrollToTop>
                 <Headermain />
                 <AppRoutes />
             </ScrollToTop>
