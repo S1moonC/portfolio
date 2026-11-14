@@ -1,63 +1,19 @@
 import React from "react";
 import "./style.css";
-import {
-  FaGithub,
-  FaInstagram,
-  FaFacebookF,
-  FaLinkedin,
-  FaYoutube,
-  FaTwitch,
-} from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { FaGithub, FaInstagram, FaFacebookF } from "react-icons/fa";
+import { useLocale } from "../../i18n";
 
-export const Socialicons = (params) => {
+export const Socialicons = () => {
+  const { labels, content } = useLocale();
+  const social = content.socialprofils;
   return (
     <div className="stick_follow_icon">
       <ul>
-        {socialprofils.instagram && (
-          <li>
-            <a href={socialprofils.instagram}>
-              <FaInstagram />
-            </a>
-          </li>
-        )}
-        {socialprofils.github && (
-          <li>
-            <a href={socialprofils.github}>
-              <FaGithub />
-            </a>
-          </li>
-        )}
-        {socialprofils.facebook && (
-          <li>
-            <a href={socialprofils.facebook}>
-              <FaFacebookF />
-            </a>
-          </li>
-        )}
-        {socialprofils.Youtube && (
-          <li>
-            <a href={socialprofils.youtube}>
-              <FaLinkedin />
-            </a>
-          </li>
-        )}
-        {socialprofils.youtube && (
-          <li>
-            <a href={socialprofils.youtube}>
-              <FaYoutube />
-            </a>
-          </li>
-        )}
-        {socialprofils.twitch && (
-          <li>
-            <a href={socialprofils.twitch}>
-              <FaTwitch />
-            </a>
-          </li>
-        )}
+        {social.instagram && <li><a href={social.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>}
+        {social.github && <li><a href={social.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>}
+        {social.facebook && <li><a href={social.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>}
       </ul>
-      <p>Follow Me</p>
+      <p>{labels.followMe}</p>
     </div>
   );
 };
