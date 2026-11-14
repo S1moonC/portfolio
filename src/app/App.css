@@ -40,3 +40,10 @@
         max-width: 1140px;
     }
 }
+
+@media(max-width:767.98px){
+ .s_c{padding-top:0}
+ .s_c .container{padding-inline:20px;min-width:0}
+ .s_c .container .row>[class*="col"]{min-width:0}
+ .s_c .container .display-4{font-size:clamp(2.1rem,9vw,2.75rem)}
+}
