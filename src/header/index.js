@@ -43,7 +43,7 @@ const Headermain = () => {
               {language === "en" ? "EN" : "CZ"} <span aria-hidden="true">↔</span>
             </button>
             <Themetoggle />
-            <button className="menu__button nav_ac" onClick={handleToggle} aria-label={isActive ? "Close menu" : "Open menu"} aria-expanded={isActive}>
+            <button className="menu__button nav_ac" onClick={handleToggle} aria-label={isActive ? labels.closeMenu : labels.openMenu} aria-expanded={isActive}>
               {isActive ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
