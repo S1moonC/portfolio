@@ -205,23 +205,65 @@
     margin-right: 10px;
     text-decoration: none;
 }
-/* Compact language control styled consistently with the original header. */
-.language-switch {
-    cursor: pointer;
-    border: 0;
-    font-size: 1rem;
-    background: transparent;
-    color: var(--text-color-2);
-    min-width: 72px;
+/* Keep the full name and bilingual switch visible on desktop and mobile. */
+.site__header .navbar-brand {
+    white-space: nowrap;
+    margin-right: 0.4rem;
+    font-size: 1.05rem;
+    padding-inline: 10px;
 }
-.language-switch:hover,
-.language-switch:focus-visible {
+
+.site__header .language-switch {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    min-width: 108px;
+    padding: 5px 8px;
+    background: var(--primary-color);
+    color: var(--text-color-2);
+    font-size: 0.88rem;
+    border: 0;
+}
+
+.language-switch .language-choice {
+    opacity: 0.6;
+}
+.language-switch .language-choice.is-active {
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.language-switch .language-divider {
+    opacity: 0.85;
+}
+.site__header .language-switch:hover,
+.site__header .language-switch:focus-visible {
     color: var(--text-color-3);
 }
-.language-switch span {
-    font-size: .85em;
-    opacity: .65;
-}
-@media (max-width: 450px) {
-    .language-switch { min-width: 56px; padding: 5px 7px; }
+
+@media (max-width: 480px) {
+    .site__header .navbar-brand {
+        font-size: 0.85rem;
+        padding-inline: 5px;
+        margin-right: 2px;
+    }
+    .site__header .language-switch {
+        min-width: 0;
+        padding-inline: 4px;
+        gap: 3px;
+        font-size: 0.75rem;
+    }
+    .site__header .menu__button {
+        padding-inline: 5px;
+    }
+    .site__header .menu__button svg {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .site__header .d-flex.align-items-center > .nav_ac {
+        padding-inline: 5px;
+    }
 }
