@@ -5,7 +5,8 @@ import * as en from "./content_option_en";
 const interfaceTexts = {
   cs: {
     navigation: { home: "Domů", portfolio: "Portfolio", about: "O mně", contact: "Kontakt" },
-    switchLanguage: "Přepnout do angličtiny",\n    openMenu: "Otevřít nabídku", closeMenu: "Zavřít nabídku",
+    switchLanguage: "Přepnout do angličtiny",
+    openMenu: "Otevřít nabídku", closeMenu: "Zavřít nabídku",
     footer: "Všechna práva vyhrazena",
     followMe: "Sledujte mě",
     home: { portfolio: "Moje portfolio", about: "O mně", contact: "Kontaktujte mě" },
@@ -20,7 +21,8 @@ const interfaceTexts = {
   },
   en: {
     navigation: { home: "Home", portfolio: "Portfolio", about: "About", contact: "Contact" },
-    switchLanguage: "Switch to Czech",\n    openMenu: "Open menu", closeMenu: "Close menu",
+    switchLanguage: "Switch to Czech",
+    openMenu: "Open menu", closeMenu: "Close menu",
     footer: "All rights reserved",
     followMe: "Follow me",
     home: { portfolio: "My Portfolio", about: "About Me", contact: "Contact Me" },
