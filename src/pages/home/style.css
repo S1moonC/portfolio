@@ -232,3 +232,27 @@ section {
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
 }
+/* All three primary links share one horizontal row, including on phones. */
+.intro_btn-action {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+}
+.intro_btn-action > a {
+    display: block;
+    min-width: 0;
+    text-decoration: none;
+}
+.intro_btn-action .ac_btn {
+    width: 100%;
+    margin-right: 0;
+    min-height: 42px;
+    padding: 6px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: clamp(0.65rem, 1.05vw, 0.85rem);
+}
