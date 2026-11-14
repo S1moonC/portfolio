@@ -32,6 +32,7 @@ async function run() {
     const nav = async (text) => {
       await openMenu();
       await page.locator(".site__navigation .the_menu").getByRole("link", { name: text }).click();
+      await page.waitForTimeout(700); // allow the 400ms route-exit animation to unmount
     };
 
     await goto("/");
