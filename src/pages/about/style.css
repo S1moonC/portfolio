@@ -107,3 +107,17 @@
 .about-description p:last-child {
     margin-bottom: 0;
 }
+
+
+@media(max-width:767.98px){
+ .About-header .sec_sp{margin-bottom:40px}
+ .About-header .sec_sp .color_sec{padding-block:9px 14px!important;font-size:1.5rem}
+ .About-header .about-description p{line-height:1.7;font-size:.96rem}
+ .About-header .table tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;border-bottom:1px solid rgba(155,155,155,.4);padding:9px 0}
+ .About-header .table tr>th,.About-header .table tr>td{border:0;padding:2px 0;min-width:0;overflow-wrap:anywhere}
+ .About-header .table tr>th{grid-column:1;grid-row:1}
+ .About-header .table tr>td:first-of-type{grid-column:1;grid-row:2;opacity:.75;font-size:.86rem}
+ .About-header .table tr>td:last-of-type{grid-column:2;grid-row:1/span 2;align-self:center}
+ .About-header .table tr a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 10px;border:1px solid var(--text-color);text-decoration:none}
+ .About-header .service_{padding-block:12px!important}
+}
