@@ -43,6 +43,7 @@ async function run() {
     await page.screenshot({ path: "preview-screenshots/01-home-cs.png", fullPage: true });
 
     await page.locator(".language-switch").click();
+    await page.waitForTimeout(700); // language changes also use the 400ms route animation
     assert.equal(await page.locator("html").getAttribute("lang"), "en");
     assert.equal(await page.getByText("My Portfolio", { exact: true }).count(), 1);
     assert.match(page.url(), /lang=en/);
@@ -76,6 +77,7 @@ async function run() {
     await page.getByText("Your message has been sent successfully.", { exact: true }).waitFor();
 
     await page.locator(".language-switch").click();
+    await page.waitForTimeout(700); // language changes also use the 400ms route animation
     assert.equal(await heading("Kontakt").count(), 1);
     assert.equal(await page.locator("html").getAttribute("lang"), "cs");
     assert.equal(await page.locator('input[name="name"]').getAttribute("placeholder"), "Jméno");
@@ -91,6 +93,7 @@ async function run() {
     await page.setViewportSize({ width: 390, height: 844 });
     await goto("/");
     await page.locator(".language-switch").click();
+    await page.waitForTimeout(700); // language changes also use the 400ms route animation
     await nav("Contact");
     assert.match(page.url(), /\/contact\?lang=en$/);
     assert.equal(await heading("Contact").count(), 1);
