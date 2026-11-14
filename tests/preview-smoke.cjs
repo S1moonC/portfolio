@@ -40,6 +40,23 @@ async function run() {
     assert.equal(await page.locator("html").getAttribute("lang"), "cs");
     assert.equal(await page.getByText("Moje portfolio", { exact: true }).count(), 1);
     assert.equal(await page.locator('a[href*="dQw4w9WgXcQ"]').count(), 0);
+    // Verify branding, language selector and 3-column hero layout.
+    assert.equal(await page.locator(".site__header .navbar-brand").innerText(), "ŠIMON ČADA");
+    assert.equal(await page.locator(".language-switch").textContent().then(text => text.replace(/\s+/g, "")), "CZ↔EN");
+    assert.equal(await page.locator("body").innerText().then(text => text.includes("\\n")), false, "Literal backslash-n must not be visible");
+    async function assertButtonsInRow() {
+      const rects = await page.locator(".intro_btn-action > a").evaluateAll(
+        (elements) => elements.map(element => {
+          const b = element.getBoundingClientRect();
+          return { top: b.top, right: b.right, left: b.left, width: b.width };
+        })
+      );
+      assert.equal(rects.length, 3);
+      assert(rects.every(r => r.width > 20), "Buttons must have visible widths");
+      assert(rects.every(r => Math.abs(r.top - rects[0].top) < 2), "All 3 buttons must be in one row");
+      assert(rects[0].right <= rects[1].left + 1 && rects[1].right <= rects[2].left + 1, "Buttons must not overlap");
+    }
+    await assertButtonsInRow();
     await page.screenshot({ path: "preview-screenshots/01-home-cs.png", fullPage: true });
 
     await page.locator(".language-switch").click();
@@ -92,6 +109,12 @@ async function run() {
     // Mobile navigation and language-switch regression.
     await page.setViewportSize({ width: 390, height: 844 });
     await goto("/");
+    await assertButtonsInRow();
+    assert.equal(await page.locator(".language-switch").textContent().then(text => text.replace(/\s+/g, "")), "CZ↔EN");
+    assert.equal(await page.locator(".site__header .navbar-brand").innerText(), "ŠIMON ČADA");
+    const brandRect = await page.locator(".site__header .navbar-brand").boundingBox();
+    const menuRect = await page.locator(".menu__button").boundingBox();
+    assert(brandRect && menuRect && brandRect.x + brandRect.width < menuRect.x, "Header items should fit on mobile");
     await page.locator(".language-switch").click();
     await page.waitForTimeout(700); // language changes also use the 400ms route animation
     await nav("Contact");
