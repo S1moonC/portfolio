@@ -42,7 +42,7 @@ async function run() {
     assert.equal(await page.locator('a[href*="dQw4w9WgXcQ"]').count(), 0);
     // Verify branding, language selector and 3-column hero layout.
     assert.equal(await page.locator(".site__header .navbar-brand").innerText(), "ŠIMON ČADA");
-    assert.equal(await page.locator(".language-switch").innerText(), "CZ ↔ EN");
+    assert.equal(await page.locator(".language-switch").textContent().then(text => text.replace(/\s+/g, " ").trim()), "CZ ↔ EN");
     assert.equal(await page.locator("body").innerText().then(text => text.includes("\\n")), false, "Literal backslash-n must not be visible");
     async function assertButtonsInRow() {
       const rects = await page.locator(".intro_btn-action > a").evaluateAll(
@@ -110,7 +110,7 @@ async function run() {
     await page.setViewportSize({ width: 390, height: 844 });
     await goto("/");
     await assertButtonsInRow();
-    assert.equal(await page.locator(".language-switch").innerText(), "CZ ↔ EN");
+    assert.equal(await page.locator(".language-switch").textContent().then(text => text.replace(/\s+/g, " ").trim()), "CZ ↔ EN");
     assert.equal(await page.locator(".site__header .navbar-brand").innerText(), "ŠIMON ČADA");
     const brandRect = await page.locator(".site__header .navbar-brand").boundingBox();
     const menuRect = await page.locator(".menu__button").boundingBox();
