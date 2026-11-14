@@ -162,7 +162,7 @@ async function run() {
     }
 
 
-    // Cinematic mobile variant must retain full-height photo, readable text and 3 links.
+    // Compact cinematic variant must retain a short photo, readable copy and three links.
     for (const viewport of [{ width: 402, height: 874 }, { width: 375, height: 812 }, { width: 320, height: 700 }]) {
       await page.setViewportSize(viewport);
       for (const lang of ["cs", "en"]) {
@@ -175,8 +175,10 @@ async function run() {
         assert(role.includes(lang === "en" ? "Sound engineer" : "Zvukař"), "Mobile role should be localized");
         const hero = await page.locator("#home .intro_sec").boundingBox();
         const image = await page.locator("#home .h_bg-image").boundingBox();
-        assert(hero && image && image.height > viewport.height * 0.65, "Photo should cover most of the screen");
-        assert(hero.height >= viewport.height - 90, "Cinematic hero should fill the mobile screen");
+        assert(hero && image && image.height <= 362, "Photo must be compact, not full height");
+        assert(hero.height < viewport.height - 100, "Entire compact hero should fit comfortably in the mobile viewport");
+        const cta = await page.locator("#home .intro_btn-action").boundingBox();
+        assert(cta && cta.y + cta.height < viewport.height - 20, "Hero actions should be visible without scrolling");
         const linkRects = await page.locator("#home .intro_btn-action > a").evaluateAll(els => els.map(el => {
           const r = el.getBoundingClientRect(); return { top:r.top, left:r.left, right:r.right, width:r.width };
         }));
