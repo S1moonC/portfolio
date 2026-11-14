@@ -40,7 +40,9 @@ const Headermain = () => {
           </Link>
           <div className="d-flex align-items-center">
             <button className="language-switch nav_ac" onClick={handleLanguageSwitch} title={labels.switchLanguage} aria-label={labels.switchLanguage}>
-              {language === "en" ? "EN" : "CZ"} <span aria-hidden="true">↔</span>
+              <span className={`language-choice ${language === "cs" ? "is-active" : ""}`}>CZ</span>
+              <span className="language-divider" aria-hidden="true">↔</span>
+              <span className={`language-choice ${language === "en" ? "is-active" : ""}`}>EN</span>
             </button>
             <Themetoggle />
             <button className="menu__button nav_ac" onClick={handleToggle} aria-label={isActive ? labels.closeMenu : labels.openMenu} aria-expanded={isActive}>
