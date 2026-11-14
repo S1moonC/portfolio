@@ -19,6 +19,14 @@ function _ScrollToTop(props) {
 }
 const ScrollToTop = withRouter(_ScrollToTop);
 
+function DocumentLanguage() {
+    const { search } = useLocation();
+    useEffect(() => {
+        document.documentElement.lang = new URLSearchParams(search).get("lang") === "en" ? "en" : "cs";
+    }, [search]);
+    return null;
+}
+
 export default function App() {
 
     return (
@@ -33,7 +41,7 @@ export default function App() {
                     outerScale={5}
                 />
             </div>
-            <ScrollToTop>
+            <DocumentLanguage />\n            <ScrollToTop>
                 <Headermain />
                 <AppRoutes />
             </ScrollToTop>

@@ -1,7 +1,7 @@
 const logotext = "Čada";
 const meta = {
     title: "Čada Produkce",
-    description: "Jsem Šimon Čada data scientist _ Full stack devloper,currently working in Berlin",
+    description: "Portfolio Šimona Čady – zvuková technika, moderování, hudba a produkce akcí.",
 };
 
 const introdata = {
@@ -27,6 +27,11 @@ Vedle zvukové techniky se věnuji také hře na kytaru, hudební tvorbě a info
 };
 
 const worktimeline = [{
+        jobtitle: "Kryštof",
+        where: "Pop-rock",
+        link: "https://youtu.be/rOGvU3MOeIE",
+    },
+    {
         jobtitle: "Dazed and Confused",
         where: "Blues-Rock",
         link: "https://youtu.be/u4J0USObOVk",
@@ -78,23 +83,23 @@ const skills = [{
 
 const services = [{
         title: "Zvučení kulturních akcí",
-        description: "Mám vlastní PA sestavu kterou vozím všude a narozdíl od ostatních zvukařů zvučím akci ve společenském oblečení.",
+        description: "Mám vlastní PA sestavu, se kterou zajišťuji ozvučení akcí. Zakládám si také na profesionálním vystupování a společenském oblečení.",
     },
     {
         title: "Zvučení hudebních akcí",
-        description: "Mám vlastní PA sestavu kterou vozím všude a jsem ochotný vzít i světla.",
+        description: "Mám vlastní PA sestavu a v případě potřeby mohu zajistit také osvětlení.",
     },
     {
         title: "Zvučení sportovních akcí",
-        description: "Mám vlastní PA sestavu kterou vozím všude a jsem schopný přes svoje kontakty zařídit i časomíru a ostatní potřeby na sportovní akce",
+        description: "Mám vlastní PA sestavu a díky kontaktům mohu zajistit také časomíru a další vybavení pro sportovní akce.",
     },
     {
         title: "Produkce PA a Světelných sestav",
-        description: "Jsem ochotný vám půjčit na víkend nebo na určitý den moji sestavu co budete potřebovat.",
+        description: "Nabízím zapůjčení své zvukové a světelné techniky na jeden den i na celý víkend.",
     },
     {
         title: "Kontakty",
-        description: "Mám spoustu kontaktů které by vám mohli pomoct a nebo akci podpořit.",
+        description: "Mám kontakty na lidi a firmy, kteří vám mohou pomoci s přípravou akce.",
     },
     {
         title: "Podpora",
@@ -126,7 +131,7 @@ const dataportfolio = [
 const contactConfig = {
     YOUR_EMAIL: "cadaprodukce@info.cz",
     YOUR_FONE: "+420 777 222 771",
-    description: "Už jste připraveni na perfektní ozvučení? Ozvěte se nám! Velké věci čekají za rohem.",
+    description: "Chystáte akci a hledáte kvalitní ozvučení? Ozvěte se mi!",
 
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
@@ -136,7 +141,7 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/S1moonC",
     facebook: "https://www.facebook.com/profile.php?id=100008208610713",
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+
     instagram: "https://www.instagram.com/_simon_cada_/",
 };
 export {

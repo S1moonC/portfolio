@@ -1,7 +1,7 @@
 const logotext = "Čada";
 const meta = {
     title: "Čada Productions",
-    description: "I am Šimon Čada, a data scientist and full-stack developer currently working in Berlin.",
+    description: "Šimon Čada's portfolio – sound engineering, event hosting, music and event production.",
 };
 
 const introdata = {
@@ -27,6 +27,11 @@ Alongside sound engineering, I am also passionate about playing guitar, music pr
 
 
 const worktimeline = [{
+        jobtitle: "Kryštof",
+        where: "Pop-rock",
+        link: "https://youtu.be/rOGvU3MOeIE",
+    },
+    {
     jobtitle: "Dazed and Confused",
     where: "Blues-Rock",
     link: "https://youtu.be/u4J0USObOVk",
@@ -78,7 +83,7 @@ const skills = [{
 
 const services = [{
     title: "Sound Engineering for Cultural Events",
-    description: "I have my own PA system that I take everywhere, and unlike other sound engineers, I handle events in casual attire.",
+    description: "I have my own PA system that I take everywhere, and unlike other sound engineers, I handle events in smart attire.",
 },
     {
         title: "Sound Engineering for Music Events",
@@ -126,17 +131,17 @@ const dataportfolio = [
 
 const contactConfig = {
     YOUR_EMAIL: "cadaprodukce@info.cz",
-    YOUR_PHONE: "+420 777 222 771",
-    description: "Are you ready for perfect sound? Contact us! Big things are waiting around the corner.",
+    YOUR_FONE: "+420 777 222 771",
+    description: "Ready for great sound? Get in touch and let's make your event happen.",
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
 };
 
-const socialprofiles = {
+const socialprofils = {
     github: "https://github.com/S1moonC",
     facebook: "https://www.facebook.com/profile.php?id=100008208610713",
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+
     instagram: "https://www.instagram.com/_simon_cada_/",
 };
 
@@ -149,6 +154,6 @@ export {
     services,
     introdata,
     contactConfig,
-    socialprofiles,
+    socialprofils,
     logotext,
 };
