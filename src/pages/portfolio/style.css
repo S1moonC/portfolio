@@ -78,3 +78,12 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+@media(max-width:767.98px),(hover:none) and (pointer:coarse){
+ .po_items_ho{column-count:1;column-width:auto;column-gap:0}
+ .po_item{display:block;width:100%;padding:0;min-height:0;margin:0 0 18px;background:var(--bg-color);border:1px solid rgba(155,155,155,.5);break-inside:avoid}
+ .po_item img{display:block;width:100%;height:auto}
+ .po_item .content,.po_item:hover .content{position:static;transform:none;width:100%;height:auto;opacity:1;background:var(--bg-color);color:var(--text-color);border:0;padding:12px;transition:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;font-size:.85rem}
+ .po_item .content p{margin:0;text-align:left}
+ .po_item .content a{display:inline-flex;min-height:44px;align-items:center;justify-content:center;white-space:nowrap;padding:6px 9px;font-size:.8rem}
+}
