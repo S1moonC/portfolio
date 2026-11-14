@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useLocale } from "../../i18n";
 
 export const Home = () => {
-  const { content, labels, localizedPath } = useLocale();
+  const { content, labels, localizedPath, language } = useLocale();
   const { introdata, meta } = content;
   const buttons = [
     ["/portfolio", labels.home.portfolio, "button_p"],
@@ -21,8 +21,19 @@ export const Home = () => {
           <div className="h_bg-image order-1 order-lg-2 h-100" style={{ backgroundImage: `url(${introdata.your_img_url})` }}></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center"><div className="intro mx-auto">
-              <h2 className="mb-1x">{introdata.title}</h2>
-              <h1 className="fluidz-48 mb-1x">
+              <h2 className="mb-1x desktop-intro-name">{introdata.title}</h2>
+                  <div className="cinematic-mobile-copy">
+                    <p className="cinematic-eyebrow">
+                      {language === "en" ? "SOUND · MUSIC · PRODUCTION" : "ZVUK · HUDBA · PRODUKCE"}
+                    </p>
+                    <h1 className="cinematic-name">Šimon<span>Čada.</span></h1>
+                    <p className="cinematic-role">
+                      {language === "en" ? "Sound engineer / Event host" : "Zvukař / Moderátor"}
+                      <br />
+                      {language === "en" ? "Music & event production" : "Hudební a eventová produkce"}
+                    </p>
+                  </div>
+              <h1 className="fluidz-48 mb-1x desktop-intro-typewriter">
                 <Typewriter key={labels.home.about} options={{
                   strings: Object.values(introdata.animated), autoStart: true, loop: true, deleteSpeed: 10
                 }} />
@@ -32,7 +43,11 @@ export const Home = () => {
                 {buttons.map(([path, label, id]) => (
                   <Link to={localizedPath(path)} className="text_2" key={path}>
                     <div id={id} className="ac_btn btn">
-                      {label}<div className="ring one"></div><div className="ring two"></div><div className="ring three"></div>
+                      <span className="cta-desktop-label">{label}</span>
+                      <span className="cta-mobile-label">
+                        {path === "/portfolio" ? labels.navigation.portfolio : path === "/about" ? labels.navigation.about : labels.navigation.contact}
+                      </span>
+                      <div className="ring one"></div><div className="ring two"></div><div className="ring three"></div>
                     </div>
                   </Link>
                 ))}
