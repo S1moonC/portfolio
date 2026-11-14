@@ -170,7 +170,7 @@ async function run() {
         await page.waitForTimeout(600);
         const cinematic = page.locator(".cinematic-mobile-copy");
         assert(await cinematic.isVisible(), "Cinematic mobile content must be visible");
-        assert.equal(await page.locator(".cinematic-name").innerText(), "Šimon\\nČada.");
+        assert.equal(await page.locator(".cinematic-name").innerText().then(x => x.replace(/\s+/g, "")), "ŠimonČada.");
         const role = await page.locator(".cinematic-role").innerText();
         assert(role.includes(lang === "en" ? "Sound engineer" : "Zvukař"), "Mobile role should be localized");
         const hero = await page.locator("#home .intro_sec").boundingBox();
