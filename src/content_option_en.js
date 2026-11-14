@@ -31,6 +31,7 @@ const worktimeline = [{
         where: "Pop-rock",
         link: "https://youtu.be/rOGvU3MOeIE",
     },
+    {
     jobtitle: "Dazed and Confused",
     where: "Blues-Rock",
     link: "https://youtu.be/u4J0USObOVk",
