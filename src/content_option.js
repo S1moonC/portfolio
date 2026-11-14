@@ -1,4 +1,4 @@
-const logotext = "Čada";
+const logotext = "ŠIMON ČADA";
 const meta = {
     title: "Čada Produkce",
     description: "Portfolio Šimona Čady – zvuková technika, moderování, hudba a produkce akcí.",
