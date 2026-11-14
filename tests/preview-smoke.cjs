@@ -122,6 +122,45 @@ async function run() {
     assert.equal(await heading("Contact").count(), 1);
     await page.screenshot({ path: "preview-screenshots/04-contact-mobile-en.png", fullPage: true });
 
+
+    // Responsive checks on the CSS viewport of an iPhone 16 Pro and smaller phones.
+    for (const size of [{width:402,height:874},{width:375,height:812},{width:320,height:700},{width:768,height:1024}]) {
+      await page.setViewportSize(size);
+      for (const path of ["/", "/about", "/portfolio", "/contact"]) {
+        await goto(path);
+        await page.waitForTimeout(550);
+        const metrics = await page.evaluate(() => ({
+          viewport: document.documentElement.clientWidth,
+          scrollWidth: document.documentElement.scrollWidth,
+          bodyWidth: document.body.scrollWidth
+        }));
+        assert(metrics.scrollWidth <= metrics.viewport + 2, `Horizontal overflow at ${size.width}px on ${path}: ${JSON.stringify(metrics)}`);
+        assert(metrics.bodyWidth <= metrics.viewport + 2, `Body overflow at ${size.width}px on ${path}`);
+        if (size.width === 402) {
+          const file = path === "/" ? "home" : path.slice(1);
+          await page.screenshot({ path: `preview-screenshots/iphone16pro-${file}.png`, fullPage: true });
+        }
+        if (size.width <= 402 && path === "/") {
+          const buttons = await page.locator(".intro_btn-action > a").evaluateAll(els => els.map(el => {
+            const r=el.getBoundingClientRect();return {top:r.top,right:r.right,left:r.left,width:r.width};
+          }));
+          assert.equal(buttons.length,3);
+          assert(buttons.every(b=>b.width >= 50), "Hero links must remain tappable");
+          assert(buttons.every(b=>Math.abs(b.top-buttons[0].top)<2), "Hero buttons must stay in one row");
+        }
+        if (size.width === 402 && path === "/portfolio") {
+          const overlay = page.locator(".po_item .content").first();
+          assert.equal(await overlay.evaluate(e => getComputedStyle(e).opacity), "1", "Photo link must be visible without hover");
+        }
+      }
+      if (size.width === 402) {
+        await goto("/");
+        await page.locator(".menu__button").click();
+        await page.screenshot({ path: "preview-screenshots/iphone16pro-menu.png", fullPage: true });
+        await page.locator(".menu__button").click();
+      }
+    }
+
     assert.deepEqual(errors, [], "Unexpected browser JavaScript errors");
     console.log("PASS: bilingual pages, navigation, interview, social links, mobile menu, mocked contact form.");
   } finally {
