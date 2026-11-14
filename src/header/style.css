@@ -205,3 +205,23 @@
     margin-right: 10px;
     text-decoration: none;
 }
+/* Compact language control styled consistently with the original header. */
+.language-switch {
+    cursor: pointer;
+    border: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--text-color-2);
+    min-width: 72px;
+}
+.language-switch:hover,
+.language-switch:focus-visible {
+    color: var(--text-color-3);
+}
+.language-switch span {
+    font-size: .85em;
+    opacity: .65;
+}
+@media (max-width: 450px) {
+    .language-switch { min-width: 56px; padding: 5px 7px; }
+}
