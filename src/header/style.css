@@ -267,3 +267,81 @@
         padding-inline: 5px;
     }
 }
+
+
+/* Compact accessible header and full-height, scrollable mobile navigation. */
+@media (max-width: 767.98px) {
+    .site__header {
+        top: 10px;
+        padding-inline: 10px;
+    }
+    .site__header > .d-flex {
+        min-height: 52px;
+        gap: 4px;
+    }
+    .site__header .navbar-brand {
+        padding: 5px 3px;
+        font-size: clamp(0.78rem, 3.4vw, 0.96rem);
+        flex-shrink: 1;
+        min-width: 0;
+        line-height: 1.4;
+        height: auto;
+    }
+    .site__header .language-switch {
+        min-width: 0;
+        height: 44px;
+        font-size: 0.78rem;
+        gap: 4px;
+        padding-inline: 5px;
+        flex-shrink: 0;
+    }
+    .site__header .d-flex.align-items-center > .nav_ac {
+        padding-inline: 4px;
+    }
+    .site__header .menu__button {
+        min-width: 40px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .site__header .menu__button svg {
+        width: 1.45em;
+        height: 1.45em;
+    }
+    .site__header .nav_ac:not(.navbar-brand):not(.language-switch):not(.menu__button) {
+        padding-inline: 5px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .site__header .nav_ac:not(.navbar-brand) svg { max-width: 28px; max-height: 28px; }
+    .site__navigation {
+        height: 100dvh;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    .site__navigation .menu__wrapper {
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding-bottom: calc(125px + env(safe-area-inset-bottom, 0px));
+    }
+    .site__navigation .the_menu {
+        padding-top: clamp(100px, 16dvh, 150px);
+        padding-bottom: 12px;
+    }
+    .site__navigation .the_menu .menu_item > a {
+        font-size: clamp(2.15rem, 9vw, 3.2rem);
+        padding-block: 7px;
+        line-height: 1.2;
+    }
+    .site__navigation .menu_footer {
+        display: flex !important;
+        gap: 8px;
+        padding: 13px 18px calc(16px + env(safe-area-inset-bottom, 0px)) !important;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .site__navigation .menu_footer a { margin-right: 14px; }
+    .site__navigation .menu_footer .copyright { font-size: 11px; }
+}
